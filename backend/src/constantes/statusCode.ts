@@ -19,6 +19,3 @@ export const CODIGOS_ESTADO = {
     ERROR_SERVIDOR: 500,           // Internal Server Error
     SERVICIO_NO_DISPONIBLE: 503
 };
-
-// Uso en controladores:
-// res.status(CODIGO_ESTADO.CREADO).json({ ... });
