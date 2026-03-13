@@ -8,17 +8,19 @@ const socket: Socket = io(SOCKET_URL, {
   transports: ["websocket"],
 });
 
+//consegir
 export function getSocket(): Socket {
   return socket;
 }
 
+// conectarse
 export function connectSocket(): void {
   if (!socket.connected) {
     socket.connect();
   }
 }
 
-// Solo se usa en logout total
+// Solo se usa en logout total para desconectarse o salirse
 export function disconnectSocket(): void {
   if (socket.connected) {
     socket.disconnect();
